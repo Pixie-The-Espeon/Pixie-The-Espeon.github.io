@@ -3,11 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixie The Espeon</title>
+  <title>Pixie The Espeon - Bio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Custom 3-Color Radial Background */
+    body {
+      background: radial-gradient(circle, #E0CAFB 0%, #7650AF 60%, #6D4C83 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 10px;
+    }
+
+    /* Main Container Card */
+    .card {
+      background-color: #1a1c23;
+      width: 100%;
+      max-width: 380px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+    }
+
+    /* Top Banner (Updated to match purple theme) */
+    .banner {
+      background-color: #7650AF;
+      height: 100px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .quote {
+      position: absolute;
+      top: 15px;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.85);
+      font-style: italic;
+    }
+
+    /* Profile Avatar */
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 4px solid #1a1c23;
+      margin-bottom: -40px;
+      object-fit: cover;
+      background-color: #333;
+    }
+
+    /* Content Area */
+    .content {
+      padding: 50px 20px 20px 20px;
+      text-align: left;
+    }
+
+    .subtext {
+      text-align: center;
+      color: #8a8f9d;
+      font-size: 0.85rem;
+      margin-bottom: 20px;
+    }
+
+    /* Info Box */
+    .info-box {
+      background-color: #121318;
+      border-radius: 10px;
+      padding: 15px;
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #d1d5db;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .info-box h3 {
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin-top: 12px;
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+
+    .info-box h3:first-child {
+      margin-top: 0;
+    }
+
+    /* Connections Links */
+    .connections-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .link-button {
+      display: flex;
+      align-items: center;
+      background-color: #262933;
+      color: white;
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      transition: background 0.2s;
+    }
+
+    .link-button:hover {
+      background-color: #323644;
+    }
+
+    .link-button img {
+      width: 24px;
+      height: 24px;
+      margin-right: 15px;
+    }
+
+    .link-button span {
+      flex: 1;
+      text-align: center;
+      font-weight: 500;
+      margin-right: 24px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>My site is live!</p>
+
+  <div class="card">
+    <!-- Banner and Profile Pic -->
+    <div class="banner">
+      <div class="quote">"I must say... that's very bold of you."</div>
+      <img class="avatar" src="https://via.placeholder.com/80" alt="Avatar">
+    </div>
+
+    <div class="content">
+      <div class="subtext">Just someone roaming the internet :)</div>
+
+      <!-- Info Section -->
+      <div class="info-box">
+        <h3>Basic Info:</h3>
+        <p><b>Nationality:</b> Filipino</p>
+        <p><b>Pronouns:</b> They/Them</p>
+        <p><b>Status:</b> Single</p>
+
+        <h3>Bio:</h3>
+        <p>Intermediate Musician, Beginner Web Developer, Artist.</p>
+
+        <h3>Description:</h3>
+        <p>Welcome to my personal corner of the web!</p>
+      </div>
+
+      <!-- Connections / Social Links -->
+      <div class="connections-title">Connections:</div>
+
+      <a href="https://youtube.com" class="link-button" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+        <span>YouTube</span>
+      </a>
+
+      <a href="https://roblox.com" class="link-button" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968884.png" alt="Roblox">
+        <span>Roblox</span>
+      </a>
+
+      <a href="https://instagram.com" class="link-button" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+        <span>Instagram</span>
+      </a>
+
+      <a href="https://github.com" class="link-button" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        <span>GitHub</span>
+      </a>
+
+    </div>
+  </div>
+
 </body>
 </html>
-
